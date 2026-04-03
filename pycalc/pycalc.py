@@ -23,7 +23,19 @@ def subtract(a, b):
   return res
 
 def multiply(a, b):
-  return a * b
+  res = a
+  c = abs(b)
+  if c == 0:
+    return 0
+  elif c > 0:
+    while (c - 1) > 0:
+      c -= 1
+      res += a
+  
+  if b > 0:
+    return res
+  elif b < 0:
+    return -res
   
 def divide(a, b):
   return a / b
