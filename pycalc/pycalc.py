@@ -38,4 +38,10 @@ def multiply(a, b):
     return -res
   
 def divide(a, b):
-  return a / b
+  res = a
+  
+
+  if b > 0:
+    return res
+  elif b < 0:
+    return -res

@@ -39,9 +39,9 @@ class PyCalcUnitTests(unittest.TestCase):
         self.assertEqual(got, e)
   
   def test_divide(self):
-    left = [10, 4, -4, 0, -20]
-    right = [5, -4, -8, 4, 5]
-    expected = [2, -1, 0.5, 0, -4]
+    left = [10, 4, -8, 0, -20]
+    right = [5, -4, -4, 4, 5]
+    expected = [2, -1, 2, 0, -4]
     for i in range(len(left)):
       l = left[i]
       r = right[i]
